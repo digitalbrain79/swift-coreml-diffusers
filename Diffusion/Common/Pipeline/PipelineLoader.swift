@@ -93,14 +93,16 @@ extension PipelineLoader {
 
     var packagesFilename: String { (filename as NSString).deletingPathExtension }
 
-    var compiledURL: URL { downloadedURL.deletingLastPathComponent().appendingPathComponent(packagesFilename)  }
+    //var compiledURL: URL { downloadedURL.deletingLastPathComponent().appendingPathComponent(packagesFilename)  }
+    var compiledURL: URL { URL(fileURLWithPath: Bundle.main.resourcePath!)  }
 
     var downloaded: Bool {
         return FileManager.default.fileExists(atPath: downloadedURL.path)
     }
 
     var ready: Bool {
-        return FileManager.default.fileExists(atPath: compiledURL.path)
+        //return FileManager.default.fileExists(atPath: compiledURL.path)
+        true
     }
 
     var variant: AttentionVariant {
@@ -165,6 +167,11 @@ extension PipelineLoader {
         let beginDate = Date()
         let configuration = MLModelConfiguration()
         configuration.computeUnits = computeUnits
+        
+        print(configuration.computeUnits.rawValue)
+        print(model.reduceMemory)
+        print(compiledURL)
+        
         let pipeline: StableDiffusionPipelineProtocol
         if model.isXL {
             if #available(macOS 14.0, iOS 17.0, *) {

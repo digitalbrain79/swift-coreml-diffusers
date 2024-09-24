@@ -12,7 +12,7 @@ import StableDiffusion
 import CoreML
 
 let DEFAULT_MODEL = ModelInfo.sd3
-let DEFAULT_PROMPT = "Labrador in the style of Vermeer"
+let DEFAULT_PROMPT = "a photo of puppy"
 
 enum GenerationState {
     case startup
@@ -130,8 +130,10 @@ class Settings {
             Keys.computeUnits.rawValue: -1,      // Use default
             Keys.prompt.rawValue: DEFAULT_PROMPT,
             Keys.negativePrompt.rawValue: "",
-            Keys.guidanceScale.rawValue: 7.5,
-            Keys.stepCount.rawValue: 25,
+            //Keys.guidanceScale.rawValue: 7.5,
+            Keys.guidanceScale.rawValue: 0,
+            //Keys.stepCount.rawValue: 25,
+            Keys.stepCount.rawValue: 4,
             Keys.previewCount.rawValue: 5,
             Keys.seed.rawValue: 0
         ])

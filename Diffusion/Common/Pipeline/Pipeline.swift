@@ -76,9 +76,11 @@ class Pipeline {
         negativePrompt: String = "",
         scheduler: StableDiffusionScheduler,
         numInferenceSteps stepCount: Int = 50,
+        //numInferenceSteps stepCount: Int = 4,
         seed: UInt32 = 0,
         numPreviews previewCount: Int = 5,
         guidanceScale: Float = 7.5,
+        //guidanceScale: Float = 0,
         disableSafety: Bool = false
     ) throws -> GenerationResult {
         let beginDate = Date()
