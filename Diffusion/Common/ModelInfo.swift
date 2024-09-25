@@ -206,8 +206,8 @@ extension ModelInfo {
     )
     
     static let xlmbpChunked = ModelInfo(
-        modelId: "apple/coreml-stable-diffusion-xl-base-ios",
-        modelVersion: "SDXL base (768, iOS) [4 bit]",
+        modelId: "digitalbrain79/dreamshaper-xl-lightning-4step-ios-6bits",
+        modelVersion: "DreamShaper XL Lightning (1024, iOS) [6 bit]",
         supportsEncoder: false,
         quantized: true,
         isXL: true

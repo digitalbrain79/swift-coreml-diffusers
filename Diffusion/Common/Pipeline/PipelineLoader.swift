@@ -93,16 +93,16 @@ extension PipelineLoader {
 
     var packagesFilename: String { (filename as NSString).deletingPathExtension }
 
-    //var compiledURL: URL { downloadedURL.deletingLastPathComponent().appendingPathComponent(packagesFilename)  }
-    var compiledURL: URL { URL(fileURLWithPath: Bundle.main.resourcePath!)  }
+    var compiledURL: URL { downloadedURL.deletingLastPathComponent().appendingPathComponent(packagesFilename)  }
+    //var compiledURL: URL { URL(fileURLWithPath: Bundle.main.resourcePath!)  }
 
     var downloaded: Bool {
         return FileManager.default.fileExists(atPath: downloadedURL.path)
     }
 
     var ready: Bool {
-        //return FileManager.default.fileExists(atPath: compiledURL.path)
-        true
+        return FileManager.default.fileExists(atPath: compiledURL.path)
+        //true
     }
 
     var variant: AttentionVariant {
