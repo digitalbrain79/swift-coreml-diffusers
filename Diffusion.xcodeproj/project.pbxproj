@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12E73DA32CA418CC00AC2B9C /* StableDiffusion in Frameworks */ = {isa = PBXBuildFile; productRef = 12E73DA22CA418CC00AC2B9C /* StableDiffusion */; };
+		1278F7EF2CA442AF00791006 /* StableDiffusion in Frameworks */ = {isa = PBXBuildFile; productRef = 1278F7EE2CA442AF00791006 /* StableDiffusion */; };
 		8C4B32042A770C1D0090EF17 /* DiffusionImage+macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B32032A770C1D0090EF17 /* DiffusionImage+macOS.swift */; };
 		8C4B32062A770C300090EF17 /* DiffusionImage+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B32052A770C300090EF17 /* DiffusionImage+iOS.swift */; };
 		8C4B32082A77F90C0090EF17 /* Utils_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B32072A77F90C0090EF17 /* Utils_iOS.swift */; };
@@ -116,7 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB5BA5D294504DE003A2A5B /* ZIPFoundation in Frameworks */,
-				12E73DA32CA418CC00AC2B9C /* StableDiffusion in Frameworks */,
+				1278F7EF2CA442AF00791006 /* StableDiffusion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +316,7 @@
 			name = Diffusion;
 			packageProductDependencies = (
 				EBB5BA5C294504DE003A2A5B /* ZIPFoundation */,
-				12E73DA22CA418CC00AC2B9C /* StableDiffusion */,
+				1278F7EE2CA442AF00791006 /* StableDiffusion */,
 			);
 			productName = Diffusion;
 			productReference = EBE755C5293E37DD00806B32 /* Diffusion.app */;
@@ -419,7 +419,7 @@
 			packageReferences = (
 				EBB5BA5B294504DE003A2A5B /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 				F155203A297118E600DC009B /* XCRemoteSwiftPackageReference "CompactSlider" */,
-				12E73DA12CA418CC00AC2B9C /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */,
+				1278F7ED2CA442AF00791006 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */,
 			);
 			productRefGroup = EBE755C6293E37DD00806B32 /* Products */;
 			projectDirPath = "";
@@ -694,13 +694,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Diffusion/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Diffusion/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Diffusers;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To be able to save generated images to your Photo Library, you’ll need to allow this.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -715,7 +712,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.digitalbrain.Diffusers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -737,13 +733,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Diffusion/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Diffusion/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Diffusers;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To be able to save generated images to your Photo Library, you’ll need to allow this.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -758,7 +751,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.huggingface.Diffusers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -968,7 +960,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		12E73DA12CA418CC00AC2B9C /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */ = {
+		1278F7ED2CA442AF00791006 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/digitalbrain79/ml-stable-diffusion";
 			requirement = {
@@ -995,9 +987,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		12E73DA22CA418CC00AC2B9C /* StableDiffusion */ = {
+		1278F7EE2CA442AF00791006 /* StableDiffusion */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 12E73DA12CA418CC00AC2B9C /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */;
+			package = 1278F7ED2CA442AF00791006 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */;
 			productName = StableDiffusion;
 		};
 		EB0199482A31FEAF00B133E2 /* StableDiffusion */ = {
